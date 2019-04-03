@@ -1,0 +1,311 @@
+{
+	"info": {
+		"_postman_id": "dc0a13c9-c42b-430c-8808-1c1c9a38cfbc",
+		"name": "RequestInnovations",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get List Users",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjEiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJhZG1pbjFAaW5ub3ZhdGlvbi5jb20iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbmlzdHJhZG9yIiwiaWR1c3VhcmlvIjoiMSIsInJvbCI6IkFkbWluaXN0cmFkb3IiLCJub21icmUiOiJMdWtlMCIsImV4cCI6MTU1NDI2NDUzMywiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo0OTk1MiIsImF1ZCI6Imh0dHA6Ly9sb2NhbGhvc3Q6NDk5NTIifQ.vvzf40kJGf5XGltuqRJkq52yv5VwJobXn1caF0Mjnvk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjIiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJ0aGVraWxsZXIyM0BsaXZlLmNvbS5teCIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IkFkbWluaXN0cmFkb3IiLCJpZHVzdWFyaW8iOiIyIiwicm9sIjoiQWRtaW5pc3RyYWRvciIsIm5vbWJyZSI6IlJvZ2VyIiwiZXhwIjoxNTQ4MTEwMDE3LCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjUxNDE3LyIsImF1ZCI6Imh0dHA6Ly9sb2NhbGhvc3Q6NTE0MTcvIn0.4VCXrVWl0mPf9N2rWuRKypCYMOHlops2lVpzQkDb0rs"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:49953/api/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "49953",
+					"path": [
+						"api",
+						"users"
+					]
+				},
+				"description": "reques para generar token"
+			},
+			"response": []
+		},
+		{
+			"name": "Insert User",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjEiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJhZG1pbjFAaW5ub3ZhdGlvbi5jb20iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbmlzdHJhZG9yIiwiaWR1c3VhcmlvIjoiMSIsInJvbCI6IkFkbWluaXN0cmFkb3IiLCJub21icmUiOiJMdWtlMCIsImV4cCI6MTU1NDI2MTAyNywiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo0OTk1MiIsImF1ZCI6Imh0dHA6Ly9sb2NhbGhvc3Q6NDk5NTIifQ.evECj5HpRSJIrWbEP0NWCgh4qKQkZhJaK7KfrGnV5iM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"iduser\": 9000,\r\n\t\"idrole\": 1,\r\n\t\"name\": \"Luke\",\r\n\t\"password\":\"perro\",\r\n\t\"lastName\": \"Skywalker\",\r\n\t\"phone\": 8888888888,\r\n\t\"email\": \"a@a.com\",\r\n\t\"password_hash\": null,\r\n\t\"password_salt\": null,\r\n\t\"active\": true,\r\n\t\"role\": null\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:49952/api/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "49952",
+					"path": [
+						"api",
+						"users"
+					]
+				},
+				"description": "Insert User"
+			},
+			"response": []
+		},
+		{
+			"name": "Insert Conductor",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjEiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJhZG1pbjFAaW5ub3ZhdGlvbi5jb20iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbmlzdHJhZG9yIiwiaWR1c3VhcmlvIjoiMSIsInJvbCI6IkFkbWluaXN0cmFkb3IiLCJub21icmUiOiJMdWtlMCIsImV4cCI6MTU1NDI2MTI0MiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo0OTk1MiIsImF1ZCI6Imh0dHA6Ly9sb2NhbGhvc3Q6NDk5NTIifQ.akOdT4Ze_FILmSZHs6ZsBAkzQ7N1qPDLrU8dUE2-yOk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"dni\": \"12345678Zassa\",\r\n  \"name\": \"juan3\",\r\n  \"lastName\": \"perez3\",\r\n  \"points\": 1000,\r\n  \"email\": \"abc3@innovation.com\",\r\n  \"active\": true\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:49952/api/drivers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "49952",
+					"path": [
+						"api",
+						"drivers"
+					]
+				},
+				"description": "Insert Conductor"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Roles",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjEiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJhZG1pbjFAaW5ub3ZhdGlvbi5jb20iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbmlzdHJhZG9yIiwiaWR1c3VhcmlvIjoiMSIsInJvbCI6IkFkbWluaXN0cmFkb3IiLCJub21icmUiOiJMdWtlMCIsImV4cCI6MTU1NDI2MzY1OSwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo0OTk1MiIsImF1ZCI6Imh0dHA6Ly9sb2NhbGhvc3Q6NDk5NTIifQ.fxKVtFhDUfdxzmZ7Bf5TXlhETadvUphToJr9cIttqxg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "\"Authorization\"",
+						"value": "\"Bearerey JhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjEyIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZW1haWxhZGRyZXNzIjoiYUBhLmNvbSIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IkVtcGxlYWRvIiwiaWR1c3VhcmlvIjoiMTIiLCJyb2wiOiJFbXBsZWFkbyIsIm5vbWJyZSI6Ikx1a2UiLCJleHAiOjE1NTQyNTgzNzMsImlzcyI6Imh0dHA6Ly9sb2NhbGhvc3Q6NDk5NTIiLCJhdWQiOiJodHRwOi8vbG9jYWxob3N0OjQ5OTUyIn0.UHNZOSIaFCvMbauqvVw2rb1s-aGqV0_gl4jMkZHSiw8\"",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:49953/api/roles",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "49953",
+					"path": [
+						"api",
+						"roles"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login Get Token",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjEiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJhZG1pbjFAaW5ub3ZhdGlvbi5jb20iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbmlzdHJhZG9yIiwiaWR1c3VhcmlvIjoiMSIsInJvbCI6IkFkbWluaXN0cmFkb3IiLCJub21icmUiOiJMdWtlMCIsImV4cCI6MTU1NDI2NDUzMywiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo0OTk1MiIsImF1ZCI6Imh0dHA6Ly9sb2NhbGhvc3Q6NDk5NTIifQ.vvzf40kJGf5XGltuqRJkq52yv5VwJobXn1caF0Mjnvk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjIiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJ0aGVraWxsZXIyM0BsaXZlLmNvbS5teCIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IkFkbWluaXN0cmFkb3IiLCJpZHVzdWFyaW8iOiIyIiwicm9sIjoiQWRtaW5pc3RyYWRvciIsIm5vbWJyZSI6IlJvZ2VyIiwiZXhwIjoxNTQ4MTEwMDE3LCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjUxNDE3LyIsImF1ZCI6Imh0dHA6Ly9sb2NhbGhvc3Q6NTE0MTcvIn0.4VCXrVWl0mPf9N2rWuRKypCYMOHlops2lVpzQkDb0rs",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\":\"admin1@innovation.com\",\n\t\"password\":\"admin\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:49953/api/users/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "49953",
+					"path": [
+						"api",
+						"users",
+						"login"
+					]
+				},
+				"description": "Get Login Token2"
+			},
+			"response": []
+		},
+		{
+			"name": "get list drivers",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjEiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJhZG1pbjFAaW5ub3ZhdGlvbi5jb20iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbmlzdHJhZG9yIiwiaWR1c3VhcmlvIjoiMSIsInJvbCI6IkFkbWluaXN0cmFkb3IiLCJub21icmUiOiJMdWtlMCIsImV4cCI6MTU1NDI2NDczMSwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo0OTk1MiIsImF1ZCI6Imh0dHA6Ly9sb2NhbGhvc3Q6NDk5NTIifQ.LxmrP0E5mTWJIiMXYx5OeiuCiBtUdaFRP3cOy4xd0EQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:49953/api/drivers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "49953",
+					"path": [
+						"api",
+						"drivers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetDriver for DNI",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjEiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJhZG1pbjFAaW5ub3ZhdGlvbi5jb20iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbmlzdHJhZG9yIiwiaWR1c3VhcmlvIjoiMSIsInJvbCI6IkFkbWluaXN0cmFkb3IiLCJub21icmUiOiJMdWtlMCIsImV4cCI6MTU1NDI2NDczMSwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo0OTk1MiIsImF1ZCI6Imh0dHA6Ly9sb2NhbGhvc3Q6NDk5NTIifQ.LxmrP0E5mTWJIiMXYx5OeiuCiBtUdaFRP3cOy4xd0EQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:49953/api/drivers/12345678Z5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "49953",
+					"path": [
+						"api",
+						"drivers",
+						"12345678Z5"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "",
+				"type": "string"
+			}
+		]
+	}
+}
